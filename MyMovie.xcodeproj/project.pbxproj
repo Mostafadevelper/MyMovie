@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A86776402E06E156000A3027 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = A867763F2E06E156000A3027 /* Data */; };
+		A86776432E06E16D000A3027 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = A86776422E06E16D000A3027 /* Domain */; };
+		A86776472E06E1A6000A3027 /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = A86776462E06E1A6000A3027 /* Presentation */; };
+		A86776492E06E1AC000A3027 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = A86776482E06E1AC000A3027 /* Core */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A86776212E06E12A000A3027 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +34,10 @@
 		A86776102E06E129000A3027 /* MyMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86776202E06E12A000A3027 /* MyMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A867762A2E06E12A000A3027 /* MyMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A867763D2E06E148000A3027 /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
+		A86776412E06E165000A3027 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
+		A86776442E06E189000A3027 /* Presentation */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Presentation; sourceTree = "<group>"; };
+		A86776452E06E19E000A3027 /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Core; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86776432E06E16D000A3027 /* Domain in Frameworks */,
+				A86776492E06E1AC000A3027 /* Core in Frameworks */,
+				A86776472E06E1A6000A3027 /* Presentation in Frameworks */,
+				A86776402E06E156000A3027 /* Data in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +90,14 @@
 		A86776072E06E129000A3027 = {
 			isa = PBXGroup;
 			children = (
+				A86776452E06E19E000A3027 /* Core */,
+				A86776442E06E189000A3027 /* Presentation */,
+				A86776412E06E165000A3027 /* Domain */,
+				A867763D2E06E148000A3027 /* Data */,
 				A86776122E06E129000A3027 /* MyMovie */,
 				A86776232E06E12A000A3027 /* MyMovieTests */,
 				A867762D2E06E12A000A3027 /* MyMovieUITests */,
+				A867763E2E06E156000A3027 /* Frameworks */,
 				A86776112E06E129000A3027 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +110,13 @@
 				A867762A2E06E12A000A3027 /* MyMovieUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A867763E2E06E156000A3027 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +139,10 @@
 			);
 			name = MyMovie;
 			packageProductDependencies = (
+				A867763F2E06E156000A3027 /* Data */,
+				A86776422E06E16D000A3027 /* Domain */,
+				A86776462E06E1A6000A3027 /* Presentation */,
+				A86776482E06E1AC000A3027 /* Core */,
 			);
 			productName = MyMovie;
 			productReference = A86776102E06E129000A3027 /* MyMovie.app */;
@@ -404,6 +435,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,9 +443,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Mostafa.MyMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -433,6 +469,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,9 +477,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Mostafa.MyMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -558,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A867763F2E06E156000A3027 /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+		A86776422E06E16D000A3027 /* Domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Domain;
+		};
+		A86776462E06E1A6000A3027 /* Presentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Presentation;
+		};
+		A86776482E06E1AC000A3027 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A86776082E06E129000A3027 /* Project object */;
 }
