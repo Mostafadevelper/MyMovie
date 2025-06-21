@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A83671DE2E0746B700A7094C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A83671DD2E0746B700A7094C /* README.md */; };
 		A86776402E06E156000A3027 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = A867763F2E06E156000A3027 /* Data */; };
 		A86776432E06E16D000A3027 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = A86776422E06E16D000A3027 /* Domain */; };
 		A86776472E06E1A6000A3027 /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = A86776462E06E1A6000A3027 /* Presentation */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A83671DD2E0746B700A7094C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A86776102E06E129000A3027 /* MyMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86776202E06E12A000A3027 /* MyMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A867762A2E06E12A000A3027 /* MyMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 		A86776072E06E129000A3027 = {
 			isa = PBXGroup;
 			children = (
+				A83671DD2E0746B700A7094C /* README.md */,
 				A86776452E06E19E000A3027 /* Core */,
 				A86776442E06E189000A3027 /* Presentation */,
 				A86776412E06E165000A3027 /* Domain */,
@@ -243,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83671DE2E0746B700A7094C /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
